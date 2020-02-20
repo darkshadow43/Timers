@@ -1,5 +1,6 @@
 getUserTimezone();
 getUserLocation();
+getUserDatetime();
 
 function getUserTimezone(){
 	var timezoneSpan = document.getElementById("userTimezone");
@@ -19,6 +20,7 @@ function getUserTimezone(){
 function getUserLocation(){
 	var locationSpan = document.getElementById("userLocation");
 	var locationErrorSpan = document.getElementById("errorLocation");
+	var hemisphereSpan = document.getElementById("userHemisphere");
 	if (navigator.geolocation){
 		navigator.geolocation.getCurrentPosition(getCoordinates, getError);
 	}
@@ -27,7 +29,13 @@ function getUserLocation(){
 	}
 	function getCoordinates(position){
 		var lat = position.coords.latitude;
-		var lon = position.coords.longitude; 
+		var lon = position.coords.longitude;
+		if (lat >= 0){
+			hemisphereSpan.innerHTML = "<strong>Northern</strong>";
+		}
+		else{
+			hemisphereSpan.innerHTML = "<strong>Southern</strong>";
+		}
 		var reverseGeocode = 'https://nominatim.openstreetmap.org/reverse?format=json&lat=' + lat + '&lon=' + lon + '&zoom=10';
 		$.getJSON(reverseGeocode, function(data) {
 			locationSpan.innerHTML = "<strong>" + data['display_name'].split(",")[0] + "</strong> <span class=\"flag-icon flag-icon-" + data['address']['country_code'] + "\"></span>";
@@ -51,3 +59,13 @@ function getUserLocation(){
 	}
 }
 
+function getUserDatetime() {
+	var timeSpan = document.getElementById("userTime");
+	var dateSpan = document.getElementById("userDate");
+	var daysSpan = document.getElementById("userDays");
+	var now = moment();
+	timeSpan.innerHTML = "<strong>" + now.format("HH:mm:ss") + "</strong>";
+	dateSpan.innerHTML = "<strong>" + now.format("DD-MMM-YYYY") + "</strong>";
+	daysSpan.innerHTML = "<strong>" + now.format("dddd") + "</strong>";
+	setTimeout(getUserDatetime, 1000);
+}
