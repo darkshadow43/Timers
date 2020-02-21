@@ -23,6 +23,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.27/moment-timezone-with-data-2012-2022.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.4.6/css/flag-icon.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
+  	<script src="https://unpkg.com/popper.js@1"></script>
+	<script src="https://unpkg.com/tippy.js@4"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
 
@@ -38,7 +41,7 @@
   		<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     		<div class="navbar-nav">
       			<a class="nav-item nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-      			<a class="nav-item nav-link" href="#">Active</a>
+      			<a class="nav-item nav-link disabled" href="#">Active</a>
       			<a class="nav-item nav-link" href="oceania.html">Oceania</a>
       			<a class="nav-item nav-link" href="asia.html">Asia</a>
       			<a class="nav-item nav-link" href="europe.html">Europe</a>
@@ -51,18 +54,150 @@
   		<div class="row">
     		<div class="col">
 				<div class="divCountry">
-					<h5><strong>Canada</strong></h5>
-					Time Zone: <span id="tz_america_0"></span>
-					Time Zone: <span id="tz_america_1"></span>
+					<h3 style="text-align:center"><strong>Canada <span class="flag-icon flag-icon-ca"></span></strong></h3>
+					<div class="container">
+  						<div class="row">
+    						<div class="col-sm">
+      							<div id="tz_america_0" style="text-align:center"></div>
+      							<div id="status_america_0" style="text-align:center"></div>
+      							<div id="start_america_0"></div>
+      							<div id="end_america_0"></div>
+      							<div id="timer_america_0" style="text-align:center"></div>
+      							<div class="locations">
+      								<strong>Harbourside Park, St. Johns</strong><br>47.567396,-52.703357
+      								<button class="btn" data-clipboard-text="47.567396,-52.703357">
+    									<i class="fa fa-clipboard fa-sm" aria-hidden="true" style="color: #5EB750;"></i>
+									</button>
+      							</div>
+    						</div>
+							<div class="col-sm emptyBox">
+    						</div>
+  						</div>
+  					</div>
 				</div>
     		</div>
   		</div>
   		<div class="row">
     		<div class="col">
+				<div class="divCountry">
+					<h3 style="text-align:center"><strong>Brazil <span class="flag-icon flag-icon-br"></span></strong></h3>
+					<div class="container">
+  						<div class="row">
+    						<div class="col-sm">
+      							<div id="tz_america_1" style="text-align:center"></div>
+      							<div id="status_america_1" style="text-align:center"></div>
+      							<div id="start_america_1"></div>
+      							<div id="end_america_1"></div>
+      							<div id="timer_america_1" style="text-align:center"></div>
+      							<div class="locations">
+      								<strong>Ibirapuera Park, São Paulo</strong><br>-23.587275,-46.656076
+      								<button class="btn" data-clipboard-text="-23.587275,-46.656076">
+    									<i class="fa fa-clipboard fa-sm" aria-hidden="true" style="color: #5EB750;"></i>
+									</button>
+      							</div>
+      						</div>
+							<div class="col-sm emptyBox">
+    						</div>
+  						</div>
+  					</div>
+				</div>
+    		</div>
+  		</div>
+  		<div class="row">
+    		<div class="col">
+				<div class="divCountry">
+					<h3 style="text-align:center"><strong>United States of America <span class="flag-icon flag-icon-us"></span></strong></h3>
+					<div class="container">
+  						<div class="row">
+    						<div class="col-sm">
+      							<div id="tz_america_2" style="text-align:center"></div>
+      							<div id="status_america_2" style="text-align:center"></div>
+      							<div id="start_america_2"></div>
+      							<div id="end_america_2"></div>
+      							<div id="timer_america_2" style="text-align:center"></div>
+      							<div class="locations">
+      								<strong>Central Park, New York City</strong><br>40.782824,-73.966503
+      								<button class="btn" data-clipboard-text="40.782824,-73.966503">
+    									<i class="fa fa-clipboard fa-sm" aria-hidden="true" style="color: #5EB750;"></i>
+									</button>
+      							</div>
+    						</div>
+							<div class="col-sm">
+      							<div id="tz_america_3" style="text-align:center"></div>
+      							<div id="status_america_3" style="text-align:center"></div>
+      							<div id="start_america_3"></div>
+      							<div id="end_america_3"></div>
+      							<div id="timer_america_3" style="text-align:center"></div>
+      							<div class="locations">
+      								<strong>Grant Park, Chicago</strong><br>41.875664,-87.620394
+      								<button class="btn" data-clipboard-text="41.875664,-87.620394">
+    									<i class="fa fa-clipboard fa-sm" aria-hidden="true" style="color: #5EB750;"></i>
+									</button>
+      							</div>
+    						</div>
+  						</div>
+  						<div class="row">
+    						<div class="col-sm">
+      							<div id="tz_america_4" style="text-align:center"></div>
+      							<div id="status_america_4" style="text-align:center"></div>
+      							<div id="start_america_4"></div>
+      							<div id="end_america_4"></div>
+      							<div id="timer_america_4" style="text-align:center"></div>
+      							<div class="locations">
+      								<strong>Civic Center Park, Denver</strong><br>39.738901,-104.988647
+      								<button class="btn" data-clipboard-text="39.738901,-104.988647">
+    									<i class="fa fa-clipboard fa-sm" aria-hidden="true" style="color: #5EB750;"></i>
+									</button>
+      							</div>
+    						</div>
+							<div class="col-sm">
+      							<div id="tz_america_5" style="text-align:center"></div>
+      							<div id="status_america_5" style="text-align:center"></div>
+      							<div id="start_america_5"></div>
+      							<div id="end_america_5"></div>
+      							<div id="timer_america_5" style="text-align:center"></div>
+      							<div class="locations">
+      								<strong>Santa Monica Pier, Santa Monica</strong><br>34.009776,-118.496327
+      								<button class="btn" data-clipboard-text="34.009776,-118.496327">
+    									<i class="fa fa-clipboard fa-sm" aria-hidden="true" style="color: #5EB750;"></i>
+									</button>
+      							</div>
+    						</div>
+  						</div>
+  						<div class="row">
+    						<div class="col-sm">
+      							<div id="tz_america_6" style="text-align:center"></div>
+      							<div id="status_america_6" style="text-align:center"></div>
+      							<div id="start_america_6"></div>
+      							<div id="end_america_6"></div>
+      							<div id="timer_america_6" style="text-align:center"></div>
+      							<div class="locations">
+      								<strong>Earthquake Park, Anchorage</strong><br>61.196785,-149.973979
+      								<button class="btn" data-clipboard-text="61.196785,-149.973979">
+    									<i class="fa fa-clipboard fa-sm" aria-hidden="true" style="color: #5EB750;"></i>
+									</button>
+      							</div>
+    						</div>
+							<div class="col-sm">
+      							<div id="tz_america_7" style="text-align:center"></div>
+      							<div id="status_america_7" style="text-align:center"></div>
+      							<div id="start_america_7"></div>
+      							<div id="end_america_7"></div>
+      							<div id="timer_america_7" style="text-align:center"></div>
+      							<div class="locations">
+      								<strong>Honolulu Zoo, Honolulu</strong><br>21.270741,-157.819031
+      								<button class="btn" data-clipboard-text="33.588947,-7.623866">
+    									<i class="fa fa-clipboard fa-sm" aria-hidden="true" style="color: #5EB750;"></i>
+									</button>
+      							</div>
+    						</div>
+  						</div>
+  					</div>
+				</div>
     		</div>
   		</div>
 	</div>
-	<script src="js/oceania.js" type="text/javascript"></script>
+	<script src="js/america.js" type="text/javascript"></script>
     <footer class="footer navbar fixed-bottom navbar-dark bg-dark">
     	<div class="container">
     		<span class="text-light">Created by: <strong>DarkShadow </strong><a href="https://github.com/darkshadow43"><img src="assets/images/GitHub-Mark-Light-32px.png" alt="Github" width="14px" height="14px" style="vertical-align:baseline"></a></span>

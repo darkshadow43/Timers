@@ -1,0 +1,96 @@
+{
+  "America/St_Johns": {
+  	"hemisphere": "North",
+  	"active":
+  	  {
+  	    "abbr": "NDT",
+  		"text": "Newfoundland Daylight Time"
+  	  },
+  	"inactive":
+  	  {
+  	    "abbr": "NST",
+  		"text": "Newfoundland Standard Time"
+  	  } 				
+  },
+  "America/Sao_Paulo": {
+  	"hemisphere": "South",	
+  	"inactive":
+  	  {
+  	    "abbr": "BRT",
+  		"text": "Brasília Time"
+  	  }				
+  },
+  "America/New_York": {
+  	"hemisphere": "North",
+  	"active":
+  	  {
+  	    "abbr": "EDT",
+  		"text": "Eastern Daylight Time"
+  	  },
+  	"inactive":
+  	  {
+  	    "abbr": "EST",
+  		"text": "Eastern Standard Time"
+  	  }  			
+  },
+  "America/Chicago": {
+  	"hemisphere": "North",
+  	"active":
+  	  {
+  	    "abbr": "CDT",
+  		"text": "Central Daylight Time"
+  	  },
+  	"inactive":
+  	  {
+  	    "abbr": "CST",
+  		"text": "Central Standard Time"
+  	  }				
+  },
+  "America/Denver": {
+  	"hemisphere": "North",
+  	"active":
+  	  {
+  	    "abbr": "MDT",
+  		"text": "Mountain Daylight Time"
+  	  },
+  	"inactive":
+  	  {
+  	    "abbr": "MST",
+  		"text": "Mountain Standard Time"
+  	  }				
+  },
+  "America/Los_Angeles": {
+  	"hemisphere": "North",
+  	"active":
+  	  {
+  	    "abbr": "PDT",
+  		"text": "Pacific Daylight Time"
+  	  },
+  	"inactive":
+  	  {
+  	    "abbr": "PST",
+  		"text": "Pacific Standard Time"
+  	  }				
+  },
+  "America/Anchorage": {
+  	"hemisphere": "North",
+  	"active":
+  	  {
+  	    "abbr": "AKDT",
+  		"text": "Alaska Daylight Time"
+  	  },
+  	"inactive":
+  	  {
+  	    "abbr": "AKST",
+  		"text": "Alaska Standard Time"
+  	  }				
+  },
+  "Pacific/Honolulu": {
+  	"hemisphere": "North",
+  	"inactive":
+  	  {
+  	    "abbr": "HST",
+  		"text": "Hawaii Standard Time"
+  	  }				
+  }
+}
