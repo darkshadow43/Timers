@@ -1,0 +1,109 @@
+{
+  "Pacific/Chatham": {
+  	"hemisphere": "South",
+  	"active":
+  	  {  	
+  	    "abbr": "CHADT",
+  	    "text": "Chatham Islands Daylight Time"	
+  	  },
+  	"inactive":
+  	  {
+  	    "abbr": "CHAST",
+  		"text": "Chatham Islands Standard Time"
+  	  } 				
+  },
+  "Pacific/Auckland": {
+  	"hemisphere": "South",
+  	"active":
+  	  {  	
+  	    "abbr": "NZDT",
+  	    "text": "New Zealand Daylight Time"	
+  	  },
+  	"inactive":
+  	  {
+  	    "abbr": "NZST",
+  		"text": "New Zealand Standard Time"
+  	  }				
+  },
+  "Australia/Sydney": {
+  	"hemisphere": "South",
+  	"active":
+  	  {  	
+  	    "abbr": "AEDT",
+  	    "text": "Australian Eastern Daylight Time"	
+  	  },
+  	"inactive":
+  	  {
+  	    "abbr": "AEST",
+  		"text": "Australian Eastern Standard Time"
+  	  }				
+  },
+  "Australia/Brisbane": {
+  	"hemisphere": "South",
+  	"active":
+  	  {  	
+  	    "abbr": "AEDT",
+  	    "text": "Australian Eastern Daylight Time"	
+  	  },
+  	"inactive":
+  	  {
+  	    "abbr": "AEST",
+  		"text": "Australian Eastern Standard Time"
+  	  }				
+  },
+  "Australia/Darwin": {
+  	"hemisphere": "South",
+  	"active":
+  	  {  	
+  	    "abbr": "ACDT",
+  	    "text": "Australian Central Daylight Time"	
+  	  },
+  	"inactive":
+  	  {
+  	    "abbr": "ACST",
+  		"text": "Australian Central Standard Time"
+  	  }				
+  },
+  "Australia/Adelaide": {
+  	"hemisphere": "South",
+  	"active":
+  	  {  	
+  	    "abbr": "ACDT",
+  	    "text": "Australian Central Daylight Time"	
+  	  },
+  	"inactive":
+  	  {
+  	    "abbr": "ACST",
+  		"text": "Australian Central Standard Time"
+  	  }				
+  },
+  "Australia/Eucla": {
+  	"hemisphere": "South",
+  	"inactive":
+  	  {
+  	    "abbr": "ACWST",
+  		"text": "Australian Central Western Standard Time"
+  	  }				
+  },
+  "Australia/Perth": {
+  	"hemisphere": "South",
+  	"inactive":
+  	  {
+  	    "abbr": "AWST",
+  		"text": "Australian Western Standard Time"
+  	  }				
+  },
+  "Australia/Lord_Howe": {
+  	"hemisphere": "South",
+  	"active":
+  	  {  	
+  	    "abbr": "LHDT",
+  	    "text": "Lord Howe Daylight Time"	
+  	  },
+  	"inactive":
+  	  {
+  	    "abbr": "LHST",
+  		"text": "Lord Howe Standard Time"
+  	  }				
+  }
+}
