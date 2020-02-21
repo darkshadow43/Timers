@@ -1,0 +1,39 @@
+{
+  "Africa/Nairobi": {
+  	"hemisphere": "South",
+  	"inactive":
+  	  {
+  	    "abbr": "EAT",
+  		"text": "Eastern Africa Time"
+  	  } 				
+  },
+  "Africa/Johannesburg": {
+  	"hemisphere": "South",	
+  	"inactive":
+  	  {
+  	    "abbr": "SAST",
+  		"text": "South Africa Standard Time"
+  	  }				
+  },
+  "Africa/Casablanca": {
+  	"hemisphere": "North",
+  	"active":
+  	  {
+  	    "abbr": "WEST",
+  		"text": "Western European Summer Time"
+  	  },	
+  	"inactive":
+  	  {
+  	    "abbr": "WET",
+  		"text": "Western European Time"
+  	  }			
+  },
+  "Africa/Abidjan": {
+  	"hemisphere": "North",
+  	"inactive":
+  	  {
+  	    "abbr": "GMT",
+  		"text": "Greenwich Mean Time"
+  	  }				
+  }
+}

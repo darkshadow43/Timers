@@ -23,6 +23,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.27/moment-timezone-with-data-2012-2022.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.4.6/css/flag-icon.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
+  	<script src="https://unpkg.com/popper.js@1"></script>
+	<script src="https://unpkg.com/tippy.js@4"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
 
@@ -51,18 +54,109 @@
   		<div class="row">
     		<div class="col">
 				<div class="divCountry">
-					<h5><strong>Egypt</strong></h5>
-					Time Zone: <span id="tz_africa_0"></span>
-					Time Zone: <span id="tz_africa_1"></span>
+					<h3 style="text-align:center"><strong>Kenya <span class="flag-icon flag-icon-ke"></span></strong></h3>
+					<div class="container">
+  						<div class="row">
+    						<div class="col-sm">
+      							<div id="tz_africa_0" style="text-align:center"></div>
+      							<div id="status_africa_0" style="text-align:center"></div>
+      							<div id="start_africa_0"></div>
+      							<div id="end_africa_0"></div>
+      							<div id="timer_africa_0" style="text-align:center"></div>
+      							<div class="locations">
+      								<strong>Uhuru Park, Nairobi</strong><br>-1.289010,36.817187
+      								<button class="btn" data-clipboard-text="-1.289010,36.817187">
+    									<i class="fa fa-clipboard fa-sm" aria-hidden="true" style="color: #5EB750;"></i>
+									</button>
+      							</div>
+    						</div>
+							<div class="col-sm emptyBox">
+    						</div>
+  						</div>
+  					</div>
 				</div>
     		</div>
   		</div>
   		<div class="row">
     		<div class="col">
+				<div class="divCountry">
+					<h3 style="text-align:center"><strong>South Africa <span class="flag-icon flag-icon-za"></span></strong></h3>
+					<div class="container">
+  						<div class="row">
+    						<div class="col-sm">
+      							<div id="tz_africa_1" style="text-align:center"></div>
+      							<div id="status_africa_1" style="text-align:center"></div>
+      							<div id="start_africa_1"></div>
+      							<div id="end_africa_1"></div>
+      							<div id="timer_africa_1" style="text-align:center"></div>
+      							<div class="locations">
+      								<strong>Johannesburg Botanical Gardens, Johannesburg</strong><br>-26.154516,28.001604
+      								<button class="btn" data-clipboard-text="-26.154516,28.001604">
+    									<i class="fa fa-clipboard fa-sm" aria-hidden="true" style="color: #5EB750;"></i>
+									</button>
+      							</div>
+      						</div>
+							<div class="col-sm emptyBox">
+    						</div>
+  						</div>
+  					</div>
+				</div>
+    		</div>
+  		</div>
+  		<div class="row">
+    		<div class="col">
+				<div class="divCountry">
+					<h3 style="text-align:center"><strong>Morocco <span class="flag-icon flag-icon-ma"></span></strong></h3>
+					<div class="container">
+  						<div class="row">
+    						<div class="col-sm">
+      							<div id="tz_africa_2" style="text-align:center"></div>
+      							<div id="status_africa_2" style="text-align:center"></div>
+      							<div id="start_africa_2"></div>
+      							<div id="end_africa_2"></div>
+      							<div id="timer_africa_2" style="text-align:center"></div>
+      							<div class="locations">
+      								<strong>Parc de la Ligue Arabe, Casablanca</strong><br>33.588947,-7.623866
+      								<button class="btn" data-clipboard-text="33.588947,-7.623866">
+    									<i class="fa fa-clipboard fa-sm" aria-hidden="true" style="color: #5EB750;"></i>
+									</button>
+      							</div>
+    						</div>
+							<div class="col-sm emptyBox">
+    						</div>
+  						</div>
+  					</div>
+				</div>
+    		</div>
+  		</div>
+  		<div class="row">
+    		<div class="col">
+				<div class="divCountry">
+					<h3 style="text-align:center"><strong>Côte d'Ivoire <span class="flag-icon flag-icon-ci"></span></strong></h3>
+					<div class="container">
+  						<div class="row">
+    						<div class="col-sm">
+      							<div id="tz_africa_3" style="text-align:center"></div>
+      							<div id="status_africa_3" style="text-align:center"></div>
+      							<div id="start_africa_3"></div>
+      							<div id="end_africa_3"></div>
+      							<div id="timer_africa_3" style="text-align:center"></div>
+      							<div class="locations">
+      								<strong>Place de la Republique, Abidjan</strong><br>5.316652,-4.019025
+      								<button class="btn" data-clipboard-text="5.316652,-4.019025">
+    									<i class="fa fa-clipboard fa-sm" aria-hidden="true" style="color: #5EB750;"></i>
+									</button>
+      							</div>
+    						</div>
+							<div class="col-sm emptyBox">
+    						</div>
+  						</div>
+  					</div>
+				</div>
     		</div>
   		</div>
 	</div>
-	<script src="js/oceania.js" type="text/javascript"></script>
+	<script src="js/africa.js" type="text/javascript"></script>
     <footer class="footer navbar fixed-bottom navbar-dark bg-dark">
     	<div class="container">
     		<span class="text-light">Created by: <strong>DarkShadow </strong><a href="https://github.com/darkshadow43"><img src="assets/images/GitHub-Mark-Light-32px.png" alt="Github" width="14px" height="14px" style="vertical-align:baseline"></a></span>
