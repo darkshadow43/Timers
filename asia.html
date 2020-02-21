@@ -23,6 +23,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.27/moment-timezone-with-data-2012-2022.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.4.6/css/flag-icon.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
+  	<script src="https://unpkg.com/popper.js@1"></script>
+	<script src="https://unpkg.com/tippy.js@4"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
 
@@ -51,18 +54,243 @@
   		<div class="row">
     		<div class="col">
 				<div class="divCountry">
-					<h5><strong>Japan</strong></h5>
-					Time Zone: <span id="tz_asia_0"></span>
-					Time Zone: <span id="tz_asia_1"></span>
+					<h3 style="text-align:center"><strong>Japan <span class="flag-icon flag-icon-jp"></span></strong></h3>
+					<div class="container">
+  						<div class="row">
+    						<div class="col-sm">
+      							<div id="tz_asia_0" style="text-align:center"></div>
+      							<div id="status_asia_0" style="text-align:center"></div>
+      							<div id="start_asia_0"></div>
+      							<div id="end_asia_0"></div>
+      							<div id="timer_asia_0" style="text-align:center"></div>
+      							<div class="locations">
+      								<strong>Ueno Onshi Park, Tokyo</strong><br>35.715939,139.773536
+      								<button class="btn" data-clipboard-text="35.715939,139.773536">
+    									<i class="fa fa-clipboard fa-sm" aria-hidden="true" style="color: #5EB750;"></i>
+									</button>
+      							</div>
+      							<div class="locations">
+      								<strong>Osakajo, Osaka</strong><br>34.686590,135.526411
+      								<button class="btn" data-clipboard-text="34.686590,135.526411">
+    									<i class="fa fa-clipboard fa-sm" aria-hidden="true" style="color: #5EB750;"></i>
+									</button>
+      							</div>
+    						</div>
+							<div class="col-sm emptyBox">
+    						</div>
+  						</div>
+  					</div>
 				</div>
     		</div>
   		</div>
   		<div class="row">
     		<div class="col">
+				<div class="divCountry">
+					<h3 style="text-align:center"><strong>South Korea <span class="flag-icon flag-icon-kr"></span></strong></h3>
+					<div class="container">
+  						<div class="row">
+    						<div class="col-sm">
+      							<div id="tz_asia_1" style="text-align:center"></div>
+      							<div id="status_asia_1" style="text-align:center"></div>
+      							<div id="start_asia_1"></div>
+      							<div id="end_asia_1"></div>
+      							<div id="timer_asia_1" style="text-align:center"></div>
+      							<div class="locations">
+      								<strong>Lotte World, Seoul</strong><br>37.509848,127.099586
+      								<button class="btn" data-clipboard-text="37.509848,127.099586">
+    									<i class="fa fa-clipboard fa-sm" aria-hidden="true" style="color: #5EB750;"></i>
+									</button>
+      							</div>
+      							<div class="locations">
+      								<strong>Bujeon-dong, Busan</strong><br>35.157540,129.058168
+      								<button class="btn" data-clipboard-text="35.157540,129.058168">
+    									<i class="fa fa-clipboard fa-sm" aria-hidden="true" style="color: #5EB750;"></i>
+									</button>
+      							</div>
+    						</div>
+							<div class="col-sm emptyBox">
+    						</div>
+  						</div>
+  					</div>
+				</div>
     		</div>
   		</div>
-	</div>
-	<script src="js/oceania.js" type="text/javascript"></script>
+  		<div class="row">
+    		<div class="col">
+				<div class="divCountry">
+					<h3 style="text-align:center"><strong>Taiwan <span class="flag-icon flag-icon-tw"></span></strong></h3>
+					<div class="container">
+  						<div class="row">
+    						<div class="col-sm">
+      							<div id="tz_asia_2" style="text-align:center"></div>
+      							<div id="status_asia_2" style="text-align:center"></div>
+      							<div id="start_asia_2"></div>
+      							<div id="end_asia_2"></div>
+      							<div id="timer_asia_2" style="text-align:center"></div>
+      							<div class="locations">
+      								<strong>Taipei Zoo, Taipei City</strong><br>24.994849,121.585789
+      								<button class="btn" data-clipboard-text="24.994849,121.585789">
+    									<i class="fa fa-clipboard fa-sm" aria-hidden="true" style="color: #5EB750;"></i>
+									</button>
+      							</div>
+      							<div class="locations">
+      								<strong>Chiayi Park, Chiayi City</strong><br>23.481940,120.467377
+      								<button class="btn" data-clipboard-text="23.481940,120.467377">
+    									<i class="fa fa-clipboard fa-sm" aria-hidden="true" style="color: #5EB750;"></i>
+									</button>
+      							</div>
+    						</div>
+							<div class="col-sm emptyBox">
+    						</div>
+  						</div>
+  					</div>
+				</div>
+    		</div>
+  		</div>
+  		<div class="row">
+    		<div class="col">
+				<div class="divCountry">
+					<h3 style="text-align:center"><strong>Singapore <span class="flag-icon flag-icon-sg"></span></strong></h3>
+					<div class="container">
+  						<div class="row">
+    						<div class="col-sm">
+      							<div id="tz_asia_3" style="text-align:center"></div>
+      							<div id="status_asia_3" style="text-align:center"></div>
+      							<div id="start_asia_3"></div>
+      							<div id="end_asia_3"></div>
+      							<div id="timer_asia_3" style="text-align:center"></div>
+      							<div class="locations">
+      								<strong>Singapore Botanic Gardens, Singapore</strong><br>1.315000,103.815555
+      								<button class="btn" data-clipboard-text="1.315000,103.815555">
+    									<i class="fa fa-clipboard fa-sm" aria-hidden="true" style="color: #5EB750;"></i>
+									</button>
+      							</div>
+      							<div class="locations">
+      								<strong>Gardens by the Bay, Singapore</strong><br>1.281802,103.864028
+      								<button class="btn" data-clipboard-text="1.281802,103.864028">
+    									<i class="fa fa-clipboard fa-sm" aria-hidden="true" style="color: #5EB750;"></i>
+									</button>
+      							</div>
+    						</div>
+							<div class="col-sm emptyBox">
+    						</div>
+  						</div>
+  					</div>
+				</div>
+    		</div>
+  		</div>
+  		<div class="row">
+    		<div class="col">
+				<div class="divCountry">
+					<h3 style="text-align:center"><strong>Indonesia <span class="flag-icon flag-icon-id"></span></strong></h3>
+					<div class="container">
+  						<div class="row">
+    						<div class="col-sm">
+      							<div id="tz_asia_4" style="text-align:center"></div>
+      							<div id="status_asia_4" style="text-align:center"></div>
+      							<div id="start_asia_4"></div>
+      							<div id="end_asia_4"></div>
+      							<div id="timer_asia_4" style="text-align:center"></div>
+      							<div class="locations">
+      								<strong>National Monument Park, Jakarta</strong><br>-6.175360,106.827152
+      								<button class="btn" data-clipboard-text="-6.175360,106.827152">
+    									<i class="fa fa-clipboard fa-sm" aria-hidden="true" style="color: #5EB750;"></i>
+									</button>
+      							</div>
+    						</div>
+							<div class="col-sm emptyBox">
+    						</div>
+  						</div>
+  					</div>
+				</div>
+    		</div>
+  		</div>
+  		<div class="row">
+    		<div class="col">
+				<div class="divCountry">
+					<h3 style="text-align:center"><strong>India <span class="flag-icon flag-icon-in"></span></strong></h3>
+					<div class="container">
+  						<div class="row">
+    						<div class="col-sm">
+      							<div id="tz_asia_5" style="text-align:center"></div>
+      							<div id="status_asia_5" style="text-align:center"></div>
+      							<div id="start_asia_5"></div>
+      							<div id="end_asia_5"></div>
+      							<div id="timer_asia_5" style="text-align:center"></div>
+      							<div class="locations">
+      								<strong>Hauz Khas Park, New Delhi</strong><br>28.556466,77.195247
+      								<button class="btn" data-clipboard-text="28.556466,77.195247">
+    									<i class="fa fa-clipboard fa-sm" aria-hidden="true" style="color: #5EB750;"></i>
+									</button>
+      							</div>
+      							<div class="locations">
+      								<strong>LalBagh Botanical Garden, Bengaluru</strong><br>12.949451,77.586223
+      								<button class="btn" data-clipboard-text="12.949451,77.586223">
+    									<i class="fa fa-clipboard fa-sm" aria-hidden="true" style="color: #5EB750;"></i>
+									</button>
+      							</div>
+    						</div>
+							<div class="col-sm emptyBox">
+    						</div>
+  						</div>
+  					</div>
+				</div>
+    		</div>
+  		</div>
+  		<div class="row">
+    		<div class="col">
+				<div class="divCountry">
+					<h3 style="text-align:center"><strong>United Arab Emirates <span class="flag-icon flag-icon-ae"></span></strong></h3>
+					<div class="container">
+  						<div class="row">
+    						<div class="col-sm">
+      							<div id="tz_asia_6" style="text-align:center"></div>
+      							<div id="status_asia_6" style="text-align:center"></div>
+      							<div id="start_asia_6"></div>
+      							<div id="end_asia_6"></div>
+      							<div id="timer_asia_6" style="text-align:center"></div>
+      							<div class="locations">
+      								<strong>Burj Park, Dubai</strong><br>25.194771,55.272985
+      								<button class="btn" data-clipboard-text="25.194771,55.272985">
+    									<i class="fa fa-clipboard fa-sm" aria-hidden="true" style="color: #5EB750;"></i>
+									</button>
+      							</div>
+    						</div>
+							<div class="col-sm emptyBox">
+    						</div>
+  						</div>
+  					</div>
+				</div>
+    		</div>
+  		</div>
+  		<div class="row">
+    		<div class="col">
+				<div class="divCountry">
+					<h3 style="text-align:center"><strong>Qatar <span class="flag-icon flag-icon-qa"></span></strong></h3>
+					<div class="container">
+  						<div class="row">
+    						<div class="col-sm">
+      							<div id="tz_asia_7" style="text-align:center"></div>
+      							<div id="status_asia_7" style="text-align:center"></div>
+      							<div id="start_asia_7"></div>
+      							<div id="end_asia_7"></div>
+      							<div id="timer_asia_7" style="text-align:center"></div>
+      							<div class="locations">
+      								<strong>Sheraton Park, Doha</strong><br>25.317630,51.530687
+      								<button class="btn" data-clipboard-text="25.317630,51.530687">
+    									<i class="fa fa-clipboard fa-sm" aria-hidden="true" style="color: #5EB750;"></i>
+									</button>
+      							</div>
+    						</div>
+							<div class="col-sm emptyBox">
+    						</div>
+  						</div>
+  					</div>
+				</div>
+    		</div>
+  		</div>
+  	</div>
+	<script src="js/asia.js" type="text/javascript"></script>
     <footer class="footer navbar fixed-bottom navbar-dark bg-dark">
     	<div class="container">
     		<span class="text-light">Created by: <strong>DarkShadow </strong><a href="https://github.com/darkshadow43"><img src="assets/images/GitHub-Mark-Light-32px.png" alt="Github" width="14px" height="14px" style="vertical-align:baseline"></a></span>

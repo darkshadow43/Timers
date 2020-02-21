@@ -1,0 +1,66 @@
+{
+  "Asia/Tokyo": {
+  	"hemisphere": "North",
+  	"inactive":
+  	  {
+  	    "abbr": "JST",
+  		"text": "Japan Standard Time"
+  	  } 				
+  },
+  "Asia/Seoul": {
+  	"hemisphere": "North",
+  	"inactive":
+  	  {
+  	    "abbr": "KST",
+  		"text": "Korea Standard Time"
+  	  }				
+  },
+  "Asia/Taipei": {
+  	"hemisphere": "North",
+  	"inactive":
+  	  {
+  	    "abbr": "CST",
+  		"text": "China Standard Time"
+  	  }				
+  },
+  "Asia/Singapore": {
+  	"hemisphere": "North",
+  	"inactive":
+  	  {
+  	    "abbr": "SGT",
+  		"text": "Singapore Time"
+  	  }				
+  },
+  "Asia/Jakarta": {
+  	"hemisphere": "South",
+  	"inactive":
+  	  {
+  	    "abbr": "WIB",
+  		"text": "Western Indonesian Time"
+  	  }				
+  },
+  "Asia/Kolkata": {
+  	"hemisphere": "North",
+  	"inactive":
+  	  {
+  	    "abbr": "IST",
+  		"text": "India Standard Time"
+  	  }				
+  },
+  "Asia/Dubai": {
+  	"hemisphere": "North",
+  	"inactive":
+  	  {
+  	    "abbr": "GST",
+  		"text": "Gulf Standard Time"
+  	  }				
+  },
+  "Asia/Qatar": {
+  	"hemisphere": "North",
+  	"inactive":
+  	  {
+  	    "abbr": "AST",
+  		"text": "Arabia Standard Time"
+  	  }				
+  }
+}
