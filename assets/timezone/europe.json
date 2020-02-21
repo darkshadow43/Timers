@@ -1,0 +1,101 @@
+{
+  "Europe/Moscow": {
+  	"hemisphere": "North",
+  	"inactive":
+  	  {
+  	    "abbr": "MSK",
+  		"text": "Moscow Standard Time"
+  	  } 				
+  },
+  "Europe/Helsinki": {
+  	"hemisphere": "North",
+  	"active":
+  	  {
+  	    "abbr": "EEST",
+  		"text": "Eastern European Summer Time"
+  	  },	
+  	"inactive":
+  	  {
+  	    "abbr": "EET",
+  		"text": "Eastern European Time"
+  	  }				
+  },
+  "Europe/Berlin": {
+  	"hemisphere": "North",
+  	"active":
+  	  {
+  	    "abbr": "CEST",
+  		"text": "Central European Summer Time"
+  	  },	
+  	"inactive":
+  	  {
+  	    "abbr": "CET",
+  		"text": "Central European Time"
+  	  }				
+  },
+  "Europe/Brussels": {
+  	"hemisphere": "North",
+  	"active":
+  	  {
+  	    "abbr": "CEST",
+  		"text": "Central European Summer Time"
+  	  },	
+  	"inactive":
+  	  {
+  	    "abbr": "CET",
+  		"text": "Central European Time"
+  	  }				
+  },
+  "Europe/Paris": {
+  	"hemisphere": "North",
+  	"active":
+  	  {
+  	    "abbr": "CEST",
+  		"text": "Central European Summer Time"
+  	  },	
+  	"inactive":
+  	  {
+  	    "abbr": "CET",
+  		"text": "Central European Time"
+  	  }				
+  },
+  "Europe/Madrid": {
+  	"hemisphere": "North",
+  	"active":
+  	  {
+  	    "abbr": "CEST",
+  		"text": "Central European Summer Time"
+  	  },	
+  	"inactive":
+  	  {
+  	    "abbr": "CET",
+  		"text": "Central European Time"
+  	  }				
+  },
+  "Europe/London": {
+  	"hemisphere": "North",
+  	"active":
+  	  {
+  	    "abbr": "BST",
+  		"text": "British Summer Time"
+  	  },
+  	"inactive":
+  	  {
+  	    "abbr": "GMT",
+  		"text": "Greenwich Mean Time"
+  	  }				
+  },
+  "Europe/Dublin": {
+  	"hemisphere": "North",
+  	"active":
+  	  {
+  	    "abbr": "IST",
+  		"text": "Irish Standard Time"
+  	  },
+  	"inactive":
+  	  {
+  	    "abbr": "GMT",
+  		"text": "Greenwich Mean Time"
+  	  }				
+  }
+}
