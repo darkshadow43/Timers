@@ -48,7 +48,7 @@ function getOceaniaTimeZones() {
 	})
 	.done(function(){
 		for (var index = 0; index < timeZoneList.length; index++) {
-			var hourOffset = ("0" + parseInt(moment(eventDate).tz(timeZoneList[index]).utcOffset()/60)).slice(-2);
+			var hourOffset = parseInt(moment(eventDate).tz(timeZoneList[index]).utcOffset()/60);
 			var sign;
 			var timeZoneAbbr;
 			var timeZoneHemisphere;
@@ -60,6 +60,7 @@ function getOceaniaTimeZones() {
 				hourOffset *= -1;
 			}
 			var minOffset = ("0" + parseInt(moment(eventDate).tz(timeZoneList[index]).utcOffset()%60)).slice(-2);
+			hourOffset = ("0" + hourOffset).slice(-2);
 			if (moment(eventDate).tz(timeZoneList[index]).isDST() == true) {
 				timeZoneAbbr = oceaniaJSON[timeZoneList[index]]["active"]["abbr"];
 			}

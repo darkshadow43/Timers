@@ -4,7 +4,7 @@ getUserDatetime();
 
 function getUserTimezone(){
 	var timezoneSpan = document.getElementById("userTimezone");
-	var hourOffset = ("0" + parseInt(moment().utcOffset()/60)).slice(-2);
+	var hourOffset = parseInt(moment().utcOffset()/60);
 	var sign;
 	if (hourOffset > 0){
 		sign = "UTC +";
@@ -14,6 +14,7 @@ function getUserTimezone(){
 		hourOffset *= -1;
 	}
 	var minOffset = ("0" + parseInt(moment().utcOffset()%60)).slice(-2);
+	hourOffset = ("0" + hourOffset).slice(-2);
 	timezoneSpan.innerHTML = sign + hourOffset + ":" + minOffset + "[<strong>" + moment.tz(moment.tz.guess()).zoneAbbr() + "</strong>]";
 }
 
