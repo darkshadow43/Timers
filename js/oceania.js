@@ -10,12 +10,12 @@ timeZoneList = [
 	"Australia/Lord_Howe"
 ]
 
-var eventDate = [2020, 02, 22];
+var eventDate = [2020, 03, 15];
 
-var startTimeNorth = "2020-02-22 11:00:00";
-var endTimeNorth = "2020-02-22 14:00:00";
-var startTimeSouth = "2020-02-22 15:00:00";
-var endTimeSouth = "2020-02-22 18:00:00";
+var startTimeNorth = "2020-03-15 11:00:00";
+var endTimeNorth = "2020-03-15 14:00:00";
+var startTimeSouth = "2020-03-15 15:00:00";
+var endTimeSouth = "2020-03-15 18:00:00";
 
 tippy('.btn', {
   content: "Copied!",
